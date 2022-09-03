@@ -1,0 +1,46 @@
+.before-after {
+   display: flex;
+   justify-content: center;
+}
+
+.pictures {
+   position: relative;
+}
+
+.before img, .after img {
+   display: block;
+   user-select: none;
+}
+
+.before img {
+   width: 100%;
+}
+
+.after {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   overflow: hidden;
+   width: 50%;
+}
+
+.after img {
+   height: 100%;
+}
+
+.handler {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   background: rgba(0, 0, 0, 0.7) url(images/cursor.svg) no-repeat center center / 20% 20%;
+   padding: 50px;
+   box-sizing: content-box;
+   background-clip: content-box;
+   cursor: pointer;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1;
+}
